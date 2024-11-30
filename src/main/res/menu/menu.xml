@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- About Menu Item -->
+    <item
+        android:id="@+id/menu_about"
+        android:title="About"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:showAsAction="never" />
+
+    <!-- Calculation Guide Menu Item -->
+    <item
+        android:id="@+id/menu_calculation_guide"
+        android:title="Bill Calculation Guide"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:showAsAction="never" />
+</menu>

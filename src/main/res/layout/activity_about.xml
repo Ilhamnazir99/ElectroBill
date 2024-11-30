@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFAFA"
+    tools:context=".About">
+
+    <!-- Add Toolbar here -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#546EFD"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- GitHub Button -->
+
+    <!-- Image View -->
+
+    <!-- Container for your details -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit GitHub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1000dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="@drawable/img_4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailsCard"
+        android:layout_width="407dp"
+        android:layout_height="282dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449">
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Full Name -->
+            <TextView
+                android:id="@+id/textViewFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Full Name: Muhammad Nur Ilham Bin Muhammad Nazir"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <!-- No Student -->
+            <TextView
+                android:id="@+id/textViewNoStudent"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="No Student: 2023898898"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <!-- Group -->
+            <TextView
+                android:id="@+id/textViewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Group: RCDCS2405A"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <!-- Program Code -->
+            <TextView
+                android:id="@+id/textViewProgramCode"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Program Code: CS240"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Email: Ilhamnazir99@gmail.com"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

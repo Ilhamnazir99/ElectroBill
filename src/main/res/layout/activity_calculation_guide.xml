@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B226F"
+    tools:context=".Calculation_Guide">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="#546EFD"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- ScrollView to allow scrolling -->
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253">
+
+        <!-- LinearLayout to hold the content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Welcome Text -->
+
+            <!-- Table Layout -->
+            <TextView
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:text="Welcome to the Electricity Bill Calculation Guide."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0F7FA"
+                android:stretchColumns="1">
+
+                <!-- Table Header -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0288D1"
+                        android:padding="8dp"
+                        android:text="Block"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0288D1"
+                        android:padding="8dp"
+                        android:text="Charges (sen/kWh)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Row 1 -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B3E5FC"
+                        android:padding="8dp"
+                        android:text="For the first 200 kWh (1 - 200 kWh) per month" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#B3E5FC"
+                        android:padding="8dp"
+                        android:text="21.8" />
+                </TableRow>
+
+                <!-- Row 2 -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#E1F5FE"
+                        android:padding="8dp"
+                        android:text="For the next 100 kWh (201 - 300 kWh) per month" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E1F5FE"
+                        android:padding="8dp"
+                        android:text="33.4" />
+                </TableRow>
+
+                <!-- Row 3 -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B3E5FC"
+                        android:padding="8dp"
+                        android:text="For the next 300 kWh (301 - 600 kWh) per month" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#B3E5FC"
+                        android:padding="8dp"
+                        android:text="51.6" />
+                </TableRow>
+
+                <!-- Row 4 -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#E1F5FE"
+                        android:padding="8dp"
+                        android:text="For the next 300 kWh (601 per month onwards)" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E1F5FE"
+                        android:padding="8dp"
+                        android:text="54.6" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
